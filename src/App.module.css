@@ -1,0 +1,187 @@
+@import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 99.5px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.1)
+}
+
+nav img{
+    width: 51px;
+    height: 51px;
+    margin: 0 40px 0 40px;
+}
+
+.div1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'SoDo Sans SemiBold';
+    height: 51px;
+}
+
+
+.div1 li{
+    display: inline;
+    list-style: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgba(0,0,0,.87);
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0 23px 8px 0;
+    
+}
+
+.div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 51px;
+    width: 545px;
+    margin-right: 40px;
+}
+
+.div2 img{
+    width: 120px;
+    margin: 0;
+    padding: 0;
+}
+
+.btn_entrar{
+    border-radius: 50px;
+    padding: 6px 16px;
+    font-family: 'SoDo Sans SemiBold';
+    color: rgba(0,0,0,.87);
+    line-height: 1.2;
+    background: none;
+    border: 1px solid rgba(0,0,0,.87);
+    box-shadow: none;
+    font-size: 15px;
+    margin-right: 4px;
+}
+
+.btn_participe{
+    border-radius: 50px;
+    padding: 6px 16px;
+    font-family: 'SoDo Sans SemiBold';
+    line-height: 1.2;
+    background-color: rgba(0,0,0,.87);
+    border: 1px solid rgba(0,0,0,.87);
+    box-shadow: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.encontreUmaLoja{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'SoDo Sans SemiBold';
+    font-size: 14.5px;
+    font-weight: 500;
+    color: rgba(0,0,0,.87);
+}
+
+.encontreUmaLoja img{
+    width: 21px;
+    height: 21px;
+    margin: 5px;
+}
+
+.corpo{
+    margin: 0 auto;
+    width: 94%;
+    height: 100vh;
+    background-color: red;
+}
+
+.carrossel{
+    margin-bottom: 32px;
+}
+
+.div_verde{
+    height: 159px;
+    background-color: #d4e9e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.div_verde p{
+    width: 896px;
+    font-size: 17px;
+    font-weight: 100;
+    font-family: 'SoDo Sans SemiBold', sans-serif;
+    text-align: center;
+    line-height: 30px;
+    color: #1e3932
+}
+
+.div_verde button{
+    border-radius: 50px;
+    padding: 6px 16px;
+    font-family: 'SoDo Sans SemiBold';
+    line-height: 1.2;
+    border: 1px solid #1e3932;
+    background: none;
+    box-shadow: none;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #1e3932
+}
+
+.div_dividida{
+    display: flex;
+    flex-direction: row;
+    background-color: #d4e9e2;
+    color: #1e3932
+}
+
+.avisoCovid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 517px;
+    align-content: center;
+    margin: 0 auto;
+    font-family: 'SoDo Sans SemiBold';
+}
+
+.avisoCovid h3{
+    margin: 130px 0 24px 0;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.avisoCovid p{
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.avisoCovid button{
+    border-radius: 50px;
+    padding: 6px 16px;
+    font-family: 'SoDo Sans SemiBold';
+    line-height: 1.2;
+    border: 1px solid #1e3932;
+    background: none;
+    box-shadow: none;
+    font-size: 15px;
+    margin-top: 20px;
+    color: #1e3932
+}
