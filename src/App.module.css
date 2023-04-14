@@ -30,7 +30,6 @@ nav img{
     height: 51px;
 }
 
-
 .div1 li{
     display: inline;
     list-style: none;
@@ -53,7 +52,7 @@ nav img{
     margin-right: 40px;
 }
 
-.div2 img{
+.historias_latinas{
     width: 120px;
     margin: 0;
     padding: 0;
@@ -102,24 +101,22 @@ nav img{
 
 .corpo{
     margin: 0 auto;
-    width: 94%;
+    width: 100%;
     height: 100vh;
-    background-color: red;
 }
 
 .carrossel{
-    margin-bottom: 32px;
+    margin: 0 47px 32px 47px;
 }
 
 .div_verde{
-    height: 159px;
+    height: 200px;
     background-color: #d4e9e2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 32px;
+    margin: 0 47px 32px 47px;
 }
 
 .div_verde p{
@@ -148,32 +145,35 @@ nav img{
 .div_dividida{
     display: flex;
     flex-direction: row;
-    background-color: #d4e9e2;
-    color: #1e3932
+    margin: 0 47px 32px 47px;
 }
 
-.avisoCovid{
+.reaproveitavel{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 517px;
     align-content: center;
     margin: 0 auto;
     font-family: 'SoDo Sans SemiBold';
+    background-color: #d4e9e2;
+    color: #1e3932;
+    width: 100%;
+    text-align: center;
 }
 
-.avisoCovid h3{
+.reaproveitavel h3{
     margin: 130px 0 24px 0;
     font-size: 25px;
     font-weight: 100;
 }
 
-.avisoCovid p{
+.reaproveitavel p{
     font-weight: 100;
-    line-height: 30px;
+    line-height: 35px;
+    width: 517px;
 }
 
-.avisoCovid button{
+.reaproveitavel button{
     border-radius: 50px;
     padding: 6px 16px;
     font-family: 'SoDo Sans SemiBold';
@@ -184,4 +184,93 @@ nav img{
     font-size: 15px;
     margin-top: 20px;
     color: #1e3932
+}
+
+.div_repetida{
+    height: 420px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 47px 32px 47px;
+}
+
+.div_repetida img{
+    width: 720px;
+}
+
+footer{
+    box-shadow: 0px -5px 5px -5px rgba(0, 0, 0, 0.5);
+    width: 100vw;
+}
+
+.rodape{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-left: 55px;
+}
+
+.formatacao_rodape{
+    font-family: 'SoDo Sans SemiBold';
+    font-size: 16px;
+    font-weight: 100;
+    color: #32312d;
+    font-size: 15px;
+    margin-left: 70px;
+}
+
+.formatacao_rodape h3{
+    margin: 50px 0 40px 0;
+    font-weight: 100;
+}
+
+.formatacao_rodape p{
+    color:rgba(0,0,0,.56);
+    font-size: 13px;
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+
+.rodape img{
+    margin: 45px 30px ;
+}
+
+.teste{
+    height: 200px;
+    width: 100%;
+}
+
+hr{
+    margin-left: 110px;
+    width: 90%;
+    color: #fefefe;
+}
+
+.redes_sociais{
+    margin-left: 110px;
+}
+
+.redes_sociais img{
+    margin: 45px 15px 30px 0;
+}
+
+.politicas{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    font-family: 'SoDo Sans SemiBold';
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.politicas p{
+    margin: 0 10px;
+}
+
+.corporation{
+    margin: 45px 0 60px 100px;
+    font-family: 'SoDo Sans SemiBold';
+    font-weight: 100;
+    font-size: 14px;
+    color:rgba(0,0,0,.56);
 }
