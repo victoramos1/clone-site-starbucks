@@ -1,24 +1,26 @@
-import styles from './App.module.css'
-import starbucksLogo from './img/starbucks-nav-logo.svg'
-import imgHistoriasLatinas from './img/img-historias-latinas.svg'
-import pin from './img/pin.png'
-import img1 from './img/img1.jpg'
-import foto_copo from './img/foto_copo.jpg'
-import drinks from './img/drinks.jpg'
-import funcionarios from './img/funcionarios.jpg'
-import quadros from './img/quadros.jpg'
-import facebook from './img/facebook.svg'
-import spotify from './img/spotify.svg'
-import instagram from './img/instagram.svg'
-import youtube from './img/youtube.svg'
-import twitter from './img/twitter.svg'
-import linkedin from './img/linkedin.svg'
+// import styles from './App.module.css'
+// import starbucksLogo from './img/starbucks-nav-logo.svg'
+// import imgHistoriasLatinas from './img/img-historias-latinas.svg'
+// import pin from './img/pin.png'
+// import img1 from './img/img1.jpg'
+// import foto_copo from './img/foto_copo.jpg'
+// import drinks from './img/drinks.jpg'
+// import funcionarios from './img/funcionarios.jpg'
+// import quadros from './img/quadros.jpg'
+// import facebook from './img/facebook.svg'
+// import spotify from './img/spotify.svg'
+// import instagram from './img/instagram.svg'
+// import youtube from './img/youtube.svg'
+// import twitter from './img/twitter.svg'
+// import linkedin from './img/linkedin.svg'
+import Slider from './components/Slider'
 
 
 function App() {
+
   return (
     <div>
-      <header>
+      {/*<header>
         <nav>
           <div className={styles.div1}>
             <img src={starbucksLogo} alt="Starbucks Logo"/>
@@ -69,14 +71,14 @@ function App() {
             </div>
           </div>
           <div className={styles.div_repetida}>
+            <div>
+              <img src={funcionarios} alt="Funcionários Starbucks"/>
+            </div>
             <div className={styles.reaproveitavel}>
               <h3>Esperança e união</h3>
               <p>Em parceria com ONGs, Partners da Starbucks se mobilizam para entregar café às comunidades.</p>
               <button>Saiba mais</button>
             </div> 
-            <div>
-              <img src={funcionarios} alt="Funcionários Starbucks"/>
-            </div>
           </div>
           <div className={styles.div_repetida}>
             <div className={styles.reaproveitavel}>
@@ -135,9 +137,9 @@ function App() {
           </div>
           <h3 className={styles.corporation}>© 2023 Starbucks Coffee Company. Todos os direitos reservados.</h3>
         </footer>
-      </div>
-    </div> 
-      
+        </div>*/}
+        <Slider/>
+    </div>  
   );
 }
 
