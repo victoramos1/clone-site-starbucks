@@ -1,18 +1,17 @@
-// import styles from './App.module.css'
-// import starbucksLogo from './img/starbucks-nav-logo.svg'
-// import imgHistoriasLatinas from './img/img-historias-latinas.svg'
-// import pin from './img/pin.png'
-// import img1 from './img/img1.jpg'
-// import foto_copo from './img/foto_copo.jpg'
-// import drinks from './img/drinks.jpg'
-// import funcionarios from './img/funcionarios.jpg'
-// import quadros from './img/quadros.jpg'
-// import facebook from './img/facebook.svg'
-// import spotify from './img/spotify.svg'
-// import instagram from './img/instagram.svg'
-// import youtube from './img/youtube.svg'
-// import twitter from './img/twitter.svg'
-// import linkedin from './img/linkedin.svg'
+import styles from './App.module.css'
+import starbucksLogo from './img/starbucks-nav-logo.svg'
+import imgHistoriasLatinas from './img/img-historias-latinas.svg'
+import pin from './img/pin.png'
+import foto_copo from './img/foto_copo.jpg'
+import drinks from './img/drinks.jpg'
+import funcionarios from './img/funcionarios.jpg'
+import quadros from './img/quadros.jpg'
+import facebook from './img/facebook.svg'
+import spotify from './img/spotify.svg'
+import instagram from './img/instagram.svg'
+import youtube from './img/youtube.svg'
+import twitter from './img/twitter.svg'
+import linkedin from './img/linkedin.svg'
 import Slider from './components/Slider'
 
 
@@ -20,7 +19,7 @@ function App() {
 
   return (
     <div>
-      {/*<header>
+      <header>
         <nav>
           <div className={styles.div1}>
             <img src={starbucksLogo} alt="Starbucks Logo"/>
@@ -43,9 +42,7 @@ function App() {
         </nav>
       </header>
       <div className={styles.corpo}>
-        <div className={styles.carrossel}>
-          <img src={img1} alt="Imagem Carrossel"/>
-        </div>
+        <Slider/>
         <div className={styles.div_verde}>
           <p>Conforme abrimos nossas lojas, permanecemos no compromisso com a saúde e bem-estar de nossos partners e consumidores.</p>
           <button>Saiba mais</button>
@@ -137,8 +134,7 @@ function App() {
           </div>
           <h3 className={styles.corporation}>© 2023 Starbucks Coffee Company. Todos os direitos reservados.</h3>
         </footer>
-        </div>*/}
-        <Slider/>
+        </div>
     </div>  
   );
 }
