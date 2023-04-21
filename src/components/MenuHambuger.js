@@ -2,7 +2,7 @@ import imgHistoriasLatinas from '../img/img-historias-latinas.svg'
 import pin from '../img/pin.png'
 import menu from '../img/menu.png'
 import './MenuHamburguer.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function MenuHamburguer(){
     
@@ -12,6 +12,22 @@ export default function MenuHamburguer(){
         setBarraAtiva(!barraAtiva)
     }
 
+    useEffect(() => {
+        function atualizarBarraAtiva() {
+            if (window.innerWidth > 810) {
+                setBarraAtiva(false)
+            }
+        }
+
+        atualizarBarraAtiva()
+
+        window.addEventListener('resize', atualizarBarraAtiva)
+
+        return () => {
+            window.removeEventListener('resize', atualizarBarraAtiva)
+        }
+    }, [])
+
     return(
         <div>
             <div className='divPrincipal'>
@@ -19,7 +35,7 @@ export default function MenuHamburguer(){
                 <button onClick={mostrarEsconder}><img src={menu}  alt='imagem do menu hambúrguer'/></button>
                 </div>
             </div>
-            <div className={barraAtiva ? 'semBarra' : 'barraLateral'}>
+            <div className={barraAtiva === false ? 'semBarra' : 'barraLateral'}>
                 <div className='div1'>
                     <ul>
                     <li>Menu</li>

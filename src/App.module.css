@@ -308,3 +308,11 @@ hr{
     font-size: 14px;
     color:rgba(0,0,0,.56);
 }
+
+/* Responsividade */
+
+@media (min-width: 0px) and (max-width: 810px){
+    nav{
+        display: none;
+    }
+}

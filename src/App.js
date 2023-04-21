@@ -1,18 +1,18 @@
-// import styles from './App.module.css'
-// import starbucksLogo from './img/starbucks-nav-logo.svg'
-// import imgHistoriasLatinas from './img/img-historias-latinas.svg'
-// import pin from './img/pin.png'
-// import foto_copo from './img/foto_copo.jpg'
-// import drinks from './img/drinks.jpg'
-// import funcionarios from './img/funcionarios.jpg'
-// import quadros from './img/quadros.jpg'
-// import facebook from './img/facebook.svg'
-// import spotify from './img/spotify.svg'
-// import instagram from './img/instagram.svg'
-// import youtube from './img/youtube.svg'
-// import twitter from './img/twitter.svg'
-// import linkedin from './img/linkedin.svg'
-// import Slider from './components/Slider'
+import styles from './App.module.css'
+import starbucksLogo from './img/starbucks-nav-logo.svg'
+import imgHistoriasLatinas from './img/img-historias-latinas.svg'
+import pin from './img/pin.png'
+import foto_copo from './img/foto_copo.jpg'
+import drinks from './img/drinks.jpg'
+import funcionarios from './img/funcionarios.jpg'
+import quadros from './img/quadros.jpg'
+import facebook from './img/facebook.svg'
+import spotify from './img/spotify.svg'
+import instagram from './img/instagram.svg'
+import youtube from './img/youtube.svg'
+import twitter from './img/twitter.svg'
+import linkedin from './img/linkedin.svg'
+import Slider from './components/Slider'
 import MenuHamburguer from './components/MenuHambuger'
 
 
@@ -20,8 +20,8 @@ function App() {
 
   return (
     <div>
-      {/*<header>
-        <nav>
+      <header>
+        <nav className={styles.nav}>
           <div className={styles.div1}>
             <img src={starbucksLogo} alt="Starbucks Logo"/>
             <ul>
@@ -41,6 +41,7 @@ function App() {
             <button className={styles.btn_participe}>Participe agora</button>
           </div>
         </nav>
+        <MenuHamburguer/>
       </header>
       <div className={styles.corpo}>
         <Slider/>
@@ -135,8 +136,7 @@ function App() {
           </div>
           <h3 className={styles.corporation}>© 2023 Starbucks Coffee Company. Todos os direitos reservados.</h3>
         </footer>
-      </div>*/}
-      <MenuHamburguer/>
+      </div>
     </div>  
   );
 }
