@@ -16,7 +16,8 @@
 
 #dimensionamento{
     height: 191.4px;
-    margin: 32px 47px 0 47px;
+    width: 75.5%;
+    margin: 32px auto;
 }
 
 #dimensionamento p{
@@ -24,7 +25,7 @@
 }
 
 #dimensionamento2{
-    width: 896px;
+    width: 720px;
 }
 
 #dimensionamento2 p{
@@ -38,7 +39,16 @@
 #container_maior{
     display: flex;
     flex-direction: row;
-    margin: 32px 47px 0 47px;
+    justify-content: center;
+    margin: 32px auto 0 auto;
+}
+
+.divParaImagem1{
+    width: 720px;
+}
+
+.divParaImagem1 img{
+    width: 720px;
 }
 
 .estilo_compartilhado{
@@ -106,21 +116,18 @@
     box-shadow: 1px 1px 1px rgba(0,0,0,.87);
 }
 
-#container_maior{
-    margin: 32px 47px 0 47px;
-    height: 619px;
-}
-
 .layout_compartilhado{
     display: flex;
     flex-direction: row;
-    margin: 32px 47px 0 47px;
+    margin: 32px auto 0 auto;
     height: 420px;
+    width: 1440px;
 }
 
 .dimensionamentoCompartilhado{
     width: 720px;
-    height: 420px; 
+    height: 420px;
+    margin: 0 auto 0 auto; 
 }
 
 .divParaImagem2{
@@ -221,5 +228,244 @@ hr{
     color:rgba(0,0,0,.56);
 }
 
+/* Responsividade */
 
+@media (min-width: 0px) and (max-width: 799px){
 
+    .corpo{
+        width: 100vw;
+    }
+
+    .estilo_compartilhado p {
+        font-size: 14px;
+    }
+
+    .estilo_compartilhado h3{
+        margin: 35px 0 0 0;
+        text-align: center ;
+    }
+
+    #dimensionamento{
+        width: 100vw;
+        height: 250px;
+    }
+
+    #dimensionamento p{
+        margin-top: 5px;
+        max-width: 260px;
+    }
+
+    #container_maior{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #divParaImagem1{
+        height: 337px;
+        width: 100vw;
+    }
+
+    #divParaImagem1 img{
+        height: 337px;
+        width: 100vw;
+    }
+
+    #dimensionamento2{
+        width: 100vw;
+        height: 720px;
+    }
+
+    #dimensionamento2 h3{
+        margin: -10px 0 0 0;
+        max-width: 230px;
+    }
+
+    #dimensionamento2 p{
+        margin: 32px 0 0 0;
+        max-width: 230px;
+    }
+
+    .btn_maior{
+        width: 220px;
+    }
+  
+    .layout_compartilhado{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin-top: 32px;
+        height: 500px;
+    }
+
+    .divParaImagem2{
+        height: 228px;
+        width: 100vw;
+    }
+
+    .divParaImagem2 img{
+        height: 228px;
+        width: 100vw;
+    }
+
+    .dimensionamentoCompartilhado{
+        width: 100vw;
+        height: 300px;
+        padding-bottom: 25px;
+    }
+
+    .dimensionamentoCompartilhado h3{
+        max-width: 230px;
+        margin-bottom: 20px;
+    }
+
+    .dimensionamentoCompartilhado p{
+        max-width: 270px;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+        margin: 60px auto;
+    }
+
+    hr{
+        max-width: 90%;
+        margin-left: 5%
+    }
+
+    .redes_sociais{
+        display: flex;
+        flex-direction: row;
+        max-width: 100vw;
+        margin-left: 10%;
+    }
+
+    .politicas{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .politicas p{
+        padding: 10px 0;
+    }
+
+    .corporation{
+        margin-left: 5%; 
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px){
+
+    #dimensionamento{
+        width: 100vw;
+    }
+
+    #dimensionamento p{
+        max-width: 55%;
+    }
+
+    #container_maior{
+        width: 100vw;
+        height: 700px;
+    }
+
+    #divParaImagem1{
+        width: 385px;
+        height: 700px;
+        background-color: #d4e9e2;
+    }
+
+    #divParaImagem1 img{
+        width: 385px;
+        height: 331px;
+        position: absolute;
+        top: 28%;
+    }
+
+    #dimensionamento2{
+        height: 700px;
+    }
+
+    #dimensionamento2 h3{
+        max-width: 300px;
+        margin-left: 200px;
+    }
+
+    #dimensionamento2 p{
+        max-width: 270px;
+        margin-left: 100px;
+    }
+
+    .btn_maior{
+        width: 250px;
+        margin-left: 100px;
+    }
+
+    .layout_compartilhado{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 280px;
+        max-width: 100vw;
+        margin-bottom: 32px;
+    }
+
+    .divParaImagem2{
+        height: 280px;
+        width: 50%;
+        background-color: #d4e9e2;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .divParaImagem2 img{
+        height: 225px;
+        width: 100%;
+    }
+
+    .dimensionamentoCompartilhado{
+        height: 280px;
+        width: 50%;
+    }
+
+    .dimensionamentoCompartilhado h3{
+        max-width: 250px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .dimensionamentoCompartilhado p{
+        max-width: 250px;
+        text-align: center;
+    }
+
+    .rodape{
+        margin-left: 10px;
+    }
+
+    .formatacao_rodape{
+        margin-left: 40px;
+        width: 120px;
+    }
+
+    .formatacao_rodape:first-child{
+        margin-left: 10px;
+    }
+
+    .redes_sociais{
+        margin-left: 10px;
+    }
+
+    .politicas{
+        margin-left: 10px;
+    }
+
+    .corporation{
+        margin-left: 10px;
+    }
+
+}

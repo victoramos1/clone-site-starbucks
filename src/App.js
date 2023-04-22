@@ -105,7 +105,7 @@ function App() {
                           <img src={twitter} alt="Logo Twitter"/>
                       </div>
                       <div className='politicas'>
-                        <p>Política de privacidade</p> | <p>Política de troca de produto</p> | <p>Termos de uso</p> | <p>Política de cookies</p>
+                        <p>Política de privacidade</p> <p>Política de troca de produto</p> <p>Termos de uso</p> <p>Política de cookies</p>
                       </div>
                       <h3 className='corporation'>© 2023 Starbucks Coffee Company. Todos os direitos reservados.</h3>
               </footer>

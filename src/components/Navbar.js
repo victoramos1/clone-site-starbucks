@@ -53,9 +53,12 @@ export default function Navbar(){
         {/*Menu Hambúrguer*/}
         <div className='divPrincipal'>
                 <div>
-                <button onClick={mostrarEsconder}><img src={menu}  alt='imagem do menu hambúrguer'/></button>
+                    <img id="logo" src={starbucksLogo} alt="Starbucks Logo"/>
                 </div>
-            </div>
+                <div>
+                    <button onClick={mostrarEsconder}><img id="menu" src={menu}  alt='imagem do menu hambúrguer'/></button>
+                </div>
+        </div>
             <div className={barraAtiva === false ? 'semBarra' : 'barraLateral'}>
                 <div className='div_esquerda'>
                     <ul>
