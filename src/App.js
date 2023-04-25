@@ -1,5 +1,4 @@
 import './App.css'
-import imgHistoriasLatinas from './img/img-historias-latinas.svg'
 import foto_copo from './img/foto_copo.jpg'
 import drinks from './img/drinks.jpg'
 import funcionarios from './img/funcionarios.jpg'
@@ -12,8 +11,105 @@ import twitter from './img/twitter.svg'
 import linkedin from './img/linkedin.svg'
 import Slider from './components/Slider'
 import Navbar from './components/Navbar'
+import ListDropdown from './components/ListDropdown'
+import { useState, useEffect } from 'react'
 
 function App() {
+
+const[spot1, setSpot1] = useState(<div className='dimensionamentoCompartilhado estilo_compartilhado'>
+                        <h3>Saboreie uma pausa</h3>
+                        <p>Saboreie uma pausa com uma de nossas bebidas</p>
+                        <button className='btn_compartilhado'>Saiba mais</button>
+                        </div>)
+
+const[spot2, setSpot2] = useState(<div className='divParaImagem2'>
+                         <img src={drinks} alt="Copos com produtos Starbucks"/>
+                         </div>)
+
+const[spot3] = useState(<div className='divParaImagem2'>
+                        <img src={funcionarios} alt="Funcionários Starbucks"/>
+                        </div>)
+
+const[spot4] = useState(<div className='dimensionamentoCompartilhado estilo_compartilhado' id='dimensionamento3'>
+                        <h3>Esperança e união</h3>
+                        <p>Em parceria com ONGs, Partners da Starbucks se mobilizam para entregar café às comunidades.</p>
+                        <button className='btn_compartilhado'>Saiba mais</button>
+                        </div>)
+
+const[spot5, setSpot5] = useState(<div className='dimensionamentoCompartilhado estilo_compartilhado'>
+                        <h3>Coisas boas estão acontecendo</h3>
+                        <p>Um gesto de carinho àqueles que estão na linha de frente <br/>todos os dias.</p>
+                        <button className='btn_compartilhado'>Saiba mais</button>
+                        </div>)
+
+const[spot6, setSpot6] = useState(<div className='divParaImagem2'>
+                        <img src={quadros} alt="Funcionários Starbucks dentro de fotográfias"/>
+                        </div>)
+
+useEffect(()=>{
+    function controle(){
+
+            if(window.innerWidth < 769){
+                setSpot1(<div className='divParaImagem2'>
+                    <img src={drinks} alt="Copos com produtos Starbucks"/>
+                        </div>)
+                } else{
+                    setSpot1(<div className='dimensionamentoCompartilhado estilo_compartilhado'>
+                        <h3>Saboreie uma pausa</h3>
+                         <p>Saboreie uma pausa com uma de nossas bebidas</p>
+                         <button className='btn_compartilhado'>Saiba mais</button>
+                         </div>)
+                }
+
+             if(window.innerWidth < 769){
+                 setSpot2(<div className='dimensionamentoCompartilhado estilo_compartilhado'>
+                         <h3>Saboreie uma pausa</h3>
+                         <p>Saboreie uma pausa com uma de nossas bebidas</p>
+                         <button className='btn_compartilhado'>Saiba mais</button>
+                     </div>)
+             } else{
+                 setSpot2(<div className='divParaImagem2'>
+                         <img src={drinks} alt="Copos com produtos Starbucks"/>
+                         </div>)
+             }
+
+            if(window.innerWidth < 769){
+                setSpot5(<div className='divParaImagem2'>
+                        <img src={quadros} alt="Funcionários Starbucks dentro de fotográfias"/>
+                        </div>)
+            } else{
+                setSpot5(<div className='dimensionamentoCompartilhado estilo_compartilhado'>
+                        <h3>Coisas boas estão acontecendo</h3>
+                        <p>Um gesto de carinho àqueles que estão na linha de frente <br/>todos os dias.</p>
+                        <button className='btn_compartilhado'>Saiba mais</button>
+                        </div>)
+            }
+
+            if(window.innerWidth < 769){
+                setSpot6(<div className='dimensionamentoCompartilhado estilo_compartilhado'>
+                        <h3>Coisas boas estão acontecendo</h3>
+                        <p>Um gesto de carinho àqueles que estão na linha de frente <br/>todos os dias.</p>
+                        <button className='btn_compartilhado'>Saiba mais</button>
+                        </div>)
+            } else{
+                setSpot6(<div className='divParaImagem2'>
+                        <img src={quadros} alt="Funcionários Starbucks dentro de fotográfias"/>
+                        </div>)
+            }
+         
+    }
+
+     controle()
+
+     window.addEventListener('resize', controle )
+
+     return (()=>{
+         window.removeEventListener('resize', controle )
+     })
+
+   }, [])
+
+
   return (
     <div>
       <Navbar/>
@@ -34,67 +130,19 @@ function App() {
               </div>
           </div>
               <div className='layout_compartilhado'>
-                  <div className='dimensionamentoCompartilhado estilo_compartilhado'>
-                      <h3>Saboreie uma pausa</h3>
-                      <p>Saboreie uma pausa com uma de nossas bebidas</p>
-                      <button className='btn_compartilhado'>Saiba mais</button>
-                  </div>
-                  <div className='divParaImagem2'>
-                      <img src={drinks} alt="Copos com produtos Starbucks"/>
-                  </div>
+                  {spot1}
+                  {spot2}
               </div>
               <div className='layout_compartilhado'>
-                  <div className='divParaImagem2'>
-                      <img src={funcionarios} alt="Funcionários Starbucks"/>
-                  </div>
-                  <div className='dimensionamentoCompartilhado estilo_compartilhado' id='dimensionamento3'>
-                      <h3>Esperança e união</h3>
-                      <p>Em parceria com ONGs, Partners da Starbucks se mobilizam para entregar café às comunidades.</p>
-                      <button className='btn_compartilhado'>Saiba mais</button>
-                  </div>
+                  {spot3}
+                  {spot4}
               </div>
               <div className='layout_compartilhado'>
-                  <div className='dimensionamentoCompartilhado estilo_compartilhado'>
-                      <h3>Coisas boas estão acontecendo</h3>
-                      <p>Um gesto de carinho àqueles que estão na linha de frente <br/>todos os dias.</p>
-                      <button className='btn_compartilhado'>Saiba mais</button>
-                  </div>
-                  <div className='divParaImagem2'>
-                      <img src={quadros} alt="Funcionários Starbucks dentro de fotográfias"/>
-                  </div>
+                  {spot5}
+                  {spot6}
               </div>
               <footer>
-                  <div className='rodape'>
-                      <div className='formatacao_rodape'>
-                          <h3>Sobre nós</h3>
-                          <p>Nossa empresa</p>
-                          <p>Nosso café</p>
-                          <p>Atendimento ao cliente</p>
-                          <p>Compliance e privacidade</p>
-                          <p>Código de Ética e Conduta <br/>SouthRock</p>
-                      </div>
-                      <div className='formatacao_rodape'>
-                          <h3>Carreira</h3>
-                          <p>Central de carreiras</p>
-                      </div>
-                      <div className='formatacao_rodape'>
-                          <h3>Impacto social</h3>
-                          <p>Comunidade</p>
-                          <p>Meio Ambiente</p>
-                          <p>Fornecimento ético</p>
-                          <p>Histórias Starbucks</p>
-                      </div>
-                      <div className='formatacao_rodape'>
-                          <h3>Starbucks Rewards</h3>
-                          <p>Baixe o aplicativo</p>
-                          <p>Termos & Condições do<br/> Starbucks Card</p>
-                          <p>Termos & Condições do<br/> Starbucks Rewards</p>
-                          <p>Termos & Condições do<br/> Gift Card</p>
-                          <p>Termos & Condições de<br/> Promoções Starbucks</p>
-                          <p>Termos & Condições Peça<br/> e Pague pelo Celular e Retire<br/> na Loja</p>
-                      </div>
-                      <img src={imgHistoriasLatinas} className='historias_latinas' alt="Logo Histórias Latinas"/>
-                  </div>
+                  <ListDropdown/>
                   <hr/>
                       <div className='redes_sociais'>
                           <img src={spotify} alt="Logo Spotify"/>
@@ -105,7 +153,7 @@ function App() {
                           <img src={twitter} alt="Logo Twitter"/>
                       </div>
                       <div className='politicas'>
-                        <p>Política de privacidade</p> <p>Política de troca de produto</p> <p>Termos de uso</p> <p>Política de cookies</p>
+                        <p>Política de privacidade</p><span>| </span><p>Política de troca de produto</p><span>| </span><p>Termos de uso</p><span>| </span><p>Política de cookies</p>
                       </div>
                       <h3 className='corporation'>© 2023 Starbucks Coffee Company. Todos os direitos reservados.</h3>
               </footer>
