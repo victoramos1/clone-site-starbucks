@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.rodape {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 2rem 0 0 3.438rem;
+}
+
+.formatacao_rodape {
+  font-family: 'SoDo Sans SemiBold';
+  font-size: 1rem;
+  font-weight: 100;
+  color: #32312d;
+  font-size: 0.938rem;
+  margin-left: 4.375rem;
+}
+
+.formatacao_rodape h3 {
+  margin: 3.125rem 0 2.5rem 0;
+  font-weight: 100;
+}
+
+.formatacao_rodape p {
+  color: rgba(0, 0, 0, .56);
+  font-size: 0.813rem;
+  margin-bottom: 1.875rem;
+  font-weight: 100;
+}
+
+.formatacao_rodape p:hover {
+  color: black;
+}
+
+.rodape img {
+  margin: 2.813rem 1.875rem;
+}
+
+.historias_latinas {
+  width: 7.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.rodape_mobile {
+  display: none
+}
