@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/clone-site-starbucks/static/css/main.902d91f2.css",
-    "main.js": "/clone-site-starbucks/static/js/main.839760ac.js",
+    "main.css": "/clone-site-starbucks/static/css/main.a9f3e0a0.css",
+    "main.js": "/clone-site-starbucks/static/js/main.e1cbbbab.js",
     "static/media/funcionarios.jpg": "/clone-site-starbucks/static/media/funcionarios.d2e3aceaec4c375b1219.jpg",
     "static/media/drinks.jpg": "/clone-site-starbucks/static/media/drinks.968e943a822a7128ccf4.jpg",
     "static/media/quadros.jpg": "/clone-site-starbucks/static/media/quadros.521cd74cadcb025c8b35.jpg",
     "static/media/img2.jpg": "/clone-site-starbucks/static/media/img2.4762a2fd2cd65c06876f.jpg",
     "static/media/foto_copo.jpg": "/clone-site-starbucks/static/media/foto_copo.fc7af79662f507abff6d.jpg",
     "static/media/img1.jpg": "/clone-site-starbucks/static/media/img1.2d58d51dc59ede4d6f0c.jpg",
+    "static/media/img2-mobile.jpg": "/clone-site-starbucks/static/media/img2-mobile.9a1f79124ef11c7a03db.jpg",
+    "static/media/img1-mobile.jpg": "/clone-site-starbucks/static/media/img1-mobile.45970f14593be68f2f41.jpg",
     "static/media/img3.jpg": "/clone-site-starbucks/static/media/img3.7d868eb3bbe4724e88c0.jpg",
+    "static/media/img4-mobile.jpg": "/clone-site-starbucks/static/media/img4-mobile.a30a6249944651a1fe98.jpg",
     "static/media/img4.jpg": "/clone-site-starbucks/static/media/img4.ef11752da58f7bfe03c9.jpg",
+    "static/media/img3-mobile.jpg": "/clone-site-starbucks/static/media/img3-mobile.68e6f1e052d4c6783a4c.jpg",
     "static/media/pin.png": "/clone-site-starbucks/static/media/pin.64af410c6a5f32b5fd4f.png",
     "static/media/starbucks-nav-logo.svg": "/clone-site-starbucks/static/media/starbucks-nav-logo.b12f39ad706ce13fddb3804302fbdbb7.svg",
     "static/media/img-historias-latinas.svg": "/clone-site-starbucks/static/media/img-historias-latinas.10c1978d104b9d01d3109e0b47b63603.svg",
@@ -20,11 +24,11 @@
     "static/media/linkedin.svg": "/clone-site-starbucks/static/media/linkedin.fca189c54b301fadd65d58047abad268.svg",
     "static/media/youtube.svg": "/clone-site-starbucks/static/media/youtube.fdaa9345cfa8846f6873e04b976db476.svg",
     "index.html": "/clone-site-starbucks/index.html",
-    "main.902d91f2.css.map": "/clone-site-starbucks/static/css/main.902d91f2.css.map",
-    "main.839760ac.js.map": "/clone-site-starbucks/static/js/main.839760ac.js.map"
+    "main.a9f3e0a0.css.map": "/clone-site-starbucks/static/css/main.a9f3e0a0.css.map",
+    "main.e1cbbbab.js.map": "/clone-site-starbucks/static/js/main.e1cbbbab.js.map"
   },
   "entrypoints": [
-    "static/css/main.902d91f2.css",
-    "static/js/main.839760ac.js"
+    "static/css/main.a9f3e0a0.css",
+    "static/js/main.e1cbbbab.js"
   ]
 }
