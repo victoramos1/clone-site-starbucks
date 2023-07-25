@@ -16,14 +16,14 @@ import { useState, useEffect } from 'react';
 
 export default function Slider() {
 
-  const[imagem1, setImagem1] = useState(img1)
-  const[imagem2, setImagem2] = useState(img2)
-  const[imagem3, setImagem3] = useState(img3)
-  const[imagem4, setImagem4] = useState(img4)
+  const [imagem1, setImagem1] = useState(img1)
+  const [imagem2, setImagem2] = useState(img2)
+  const [imagem3, setImagem3] = useState(img3)
+  const [imagem4, setImagem4] = useState(img4)
 
-  useEffect(()=>{
-    function redimensionarImagens(){
-      if(window.innerWidth < 800){
+  useEffect(() => {
+    function redimensionarImagens() {
+      if (window.innerWidth < 800) {
         setImagem1(img1_mobile)
         setImagem2(img2_mobile)
         setImagem3(img3_mobile)
@@ -40,7 +40,7 @@ export default function Slider() {
 
     window.addEventListener('resize', redimensionarImagens)
 
-    return()=>{
+    return () => {
       window.removeEventListener('resize', redimensionarImagens)
     }
 
@@ -64,10 +64,10 @@ export default function Slider() {
         modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={imagem1} alt="imagem 1"/></SwiperSlide>
-        <SwiperSlide><img src={imagem2} alt="imagem 2"/></SwiperSlide>
-        <SwiperSlide><img src={imagem3} alt="imagem 3"/></SwiperSlide>
-        <SwiperSlide><img src={imagem4} alt="imagem 4"/></SwiperSlide>
+        <SwiperSlide><img src={imagem1} alt="imagem 1" /></SwiperSlide>
+        <SwiperSlide><img src={imagem2} alt="imagem 2" /></SwiperSlide>
+        <SwiperSlide><img src={imagem3} alt="imagem 3" /></SwiperSlide>
+        <SwiperSlide><img src={imagem4} alt="imagem 4" /></SwiperSlide>
       </Swiper>
       <div className="swiper-button-next"></div>
       <div className="swiper-button-prev"></div>

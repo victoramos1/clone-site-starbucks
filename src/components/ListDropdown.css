@@ -1,9 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.rodape{
+.rodape {
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -11,7 +11,7 @@
     margin: 32px 0 0 55px;
 }
 
-.formatacao_rodape{
+.formatacao_rodape {
     font-family: 'SoDo Sans SemiBold';
     font-size: 16px;
     font-weight: 100;
@@ -20,88 +20,99 @@
     margin-left: 70px;
 }
 
-.formatacao_rodape h3{
+.formatacao_rodape h3 {
     margin: 50px 0 40px 0;
     font-weight: 100;
 }
 
-.formatacao_rodape p{
-    color:rgba(0,0,0,.56);
+.formatacao_rodape p {
+    color: rgba(0, 0, 0, .56);
     font-size: 13px;
     margin-bottom: 30px;
     font-weight: 100;
 }
 
-.formatacao_rodape p:hover{
+.formatacao_rodape p:hover {
     color: black;
 }
 
-.rodape img{
-    margin: 45px 30px ;
+.rodape img {
+    margin: 45px 30px;
 }
 
-.historias_latinas{
+.historias_latinas {
     width: 120px;
     margin: 0;
     padding: 0;
 }
 
-.rodape_mobile{
-    display:none
+.rodape_mobile {
+    display: none
 }
 
-@media (min-width: 0px) and (max-width: 769px){
-    
-    .rodape{
+@media (min-width: 0px) and (max-width: 769px) {
+
+    .rodape {
         display: none;
     }
 
-    .rodape_mobile{
+    .rodape_mobile {
         margin-top: 50px;
         display: flex;
     }
 
-    summary{
+    summary {
         font-size: 17px;
         list-style: none;
         padding: 25px 0 0 15px;
         transition: all 0.5s ease;
     }
 
-    details{
+    details {
         font-family: 'SoDo Sans SemiBold';
         transition: all 0.5s ease;
     }
 
-    li{
+    li {
         font-family: 'SoDo Sans SemiBold';
-        color: rgba(0,0,0,.56);
+        color: rgba(0, 0, 0, .56);
         margin: 25px;
         font-weight: 100;
         list-style: none;
     }
 
-    .historias_latinas{
+    .historias_latinas {
         margin: 20px 10px;
     }
 }
 
-@media (min-width: 770px) and (max-width: 1200px){
-    
-    .rodape{
-        margin-left: 10px;
+@media (min-width: 770px) and (max-width: 1000px) {
+    .rodape {
+        margin-left: 0;
     }
 
-    .formatacao_rodape{
-        margin-left: 40px;
+    .formatacao_rodape {
+        margin-left: 30px;
         width: 120px;
     }
 
-    .formatacao_rodape:first-child{
-        margin-left: 10px;
+    .rodape_mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+
+    .rodape {
+        margin-left: 90px;
     }
 
-    .rodape_mobile{
+    .formatacao_rodape {
+        margin-left: 55px;
+        width: 120px;
+    }
+
+    .rodape_mobile {
         display: none;
     }
 }

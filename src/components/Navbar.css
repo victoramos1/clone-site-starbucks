@@ -1,27 +1,27 @@
 @import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
     height: 99.5px;
-    box-shadow: 0 2px 3px rgba(0,0,0,.1);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
 }
 
-nav img{
+nav img {
     width: 51px;
     height: 51px;
     margin: 0 40px 0 40px;
 }
 
-.div1{
+.div1 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -30,24 +30,24 @@ nav img{
     height: 51px;
 }
 
-.div1 li{
+.div1 li {
     display: inline;
     list-style: none;
     font-weight: bold;
     font-size: 14px;
-    color: rgba(0,0,0,.87);
+    color: rgba(0, 0, 0, .87);
     font-size: 13px;
     letter-spacing: 1px;
     margin: 0 23px 8px 0;
-    
+
 }
 
-.div1 li:hover{
+.div1 li:hover {
     color: rgb(4, 152, 4);
     cursor: pointer;
 }
 
-.div2{
+.div2 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57,69 +57,69 @@ nav img{
     margin-right: 40px;
 }
 
-.historias_latinas{
+.historias_latinas {
     width: 120px;
     margin: 0;
     padding: 0;
 }
 
-.btn_entrar{
+.btn_entrar {
     border-radius: 50px;
     padding: 6px 16px;
     font-family: 'SoDo Sans SemiBold';
-    color: rgba(0,0,0,.87);
+    color: rgba(0, 0, 0, .87);
     line-height: 1.2;
     background: none;
-    border: 1px solid rgba(0,0,0,.87);
+    border: 1px solid rgba(0, 0, 0, .87);
     box-shadow: none;
     font-size: 15px;
     margin-right: 4px;
     transition: 0.2s;
-    
+
 }
 
-.btn_entrar:hover{
+.btn_entrar:hover {
     transform: scale(0.9);
-    box-shadow: 1px 1px 1px rgba(0,0,0,.87);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .87);
     background-color: rgb(229, 227, 227);
 }
 
-.btn_participe{
+.btn_participe {
     border-radius: 50px;
     padding: 6px 16px;
     font-family: 'SoDo Sans SemiBold';
     line-height: 1.2;
-    background-color: rgba(0,0,0,.87);
-    border: 1px solid rgba(0,0,0,.87);
+    background-color: rgba(0, 0, 0, .87);
+    border: 1px solid rgba(0, 0, 0, .87);
     box-shadow: none;
     color: #ffffff;
     font-size: 15px;
     transition: 0.2s;
 }
 
-.btn_participe:hover{
+.btn_participe:hover {
     transform: scale(0.9);
-    box-shadow: 1px 1px 1px rgba(0,0,0,.87);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .87);
 }
 
-.encontreUmaLoja{
+.encontreUmaLoja {
     display: flex;
     flex-direction: row;
     align-items: center;
     font-family: 'SoDo Sans SemiBold';
     font-size: 14.5px;
     font-weight: 500;
-    color: rgba(0,0,0,.87);
+    color: rgba(0, 0, 0, .87);
 }
 
-.encontreUmaLoja img{
+.encontreUmaLoja img {
     width: 21px;
     height: 21px;
     margin: 5px;
 }
 
-@media (max-width: 799px){
-    nav{
+@media (max-width: 770px) {
+    nav {
         display: none;
     }
 }
@@ -128,84 +128,104 @@ nav img{
 
 @import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-@media (min-width: 0px) and (max-width: 810px){
-
-    .divPrincipal{
+@media (min-width: 0px) and (max-width: 770px) {
+    .divPrincipal {
         height: 72px;
         width: 100vw;
         display: flex;
         flex-direction: row;
-        align-items: space-between;
-        box-shadow: 1px 1px 3px rgba(0,0,0,.1);
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
         position: relative;
         z-index: 1;
     }
 
-    #logo{
+    #logo {
         width: 40px;
         padding: 15px 0 0 15px;
     }
 
-    #menu{
-        width: 22px;
+    #menu {
+        width: 20px;
         cursor: pointer;
-        margin: 25px 15px 0 70vw;
-        
+        margin-right: 25px;
     }
 
-    .divPrincipal button{
+    .divPrincipal button {
         background: none;
         border: none;
     }
 
-    .semBarra{
-        transform: translateX(-300px);
-        transition: 0.5s;
+    .semfundo {
+        display: none;
+    }
+
+    .fundoEscuro {
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        z-index: 50;
+        transform-style: preserve-3d;
+    }
+
+    .semBarra {
+        transform: translateX(-350px);
+        height: 100%;
+        transition: 0.3s;
         position: absolute;
         z-index: 2;
         top: 0%;
-        height: 100vh;
         max-height: 100%;
+        opacity: 1;
     }
 
-    .barraLateral{
+    .barraLateral {
         background-color: white;
         width: 300px;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        box-shadow: 1px 1px 3px rgba(0,0,0,.1);
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
         position: absolute;
         top: 0%;
-        transition: 0.2s;
+        transition: 0.3s;
         transform: translate(0px);
-        z-index: 2;
+        z-index: 100;
+        opacity: 1;
     }
 
-    .div_esquerda{
-        width: 200px;
-        font-family: 'SoDo Sans SemiBold', sans-serif ;
+    .div_esquerda {
+        width: 100%;
+        font-family: 'SoDo Sans SemiBold', sans-serif;
         font-weight: 100;
         font-size: 14px;
-        border-bottom: 1px solid rgba(0,0,0,.2);
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
     }
 
-    .div_esquerda li{
-        width: 220px;
-        list-style: none;
-        padding: 15px 40px;
+    .div_esquerda li {
+        padding: 15px 0 15px 30px;
+        margin: 10px 0;
     }
 
-    .div_esquerda li:hover{
+    .div_esquerda li:first-child {
+        padding: 15px 0 15px 30px;
+        margin: 0 0 10px 0;
+    }
+
+    .div_esquerda li:hover {
         background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
     }
 
-    .div_direita{
+    .div_direita {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -213,45 +233,47 @@ nav img{
         margin-right: 40px;
     }
 
-    .historias_latinas2{
+    .historias_latinas2 {
         width: 120px;
         margin: 25px 0 0 0;
         padding: 0;
     }
 
-    .historias_latinas2:hover{
+    .historias_latinas2:hover {
         padding: 0 90px;
         background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
     }
 
-    .btn_entrar2{
+    .btn_entrar2 {
         border-radius: 50px;
         padding: 12px 16px;
         font-family: 'SoDo Sans SemiBold', sans-serif;
-        color: rgba(0,0,0,.87);
+        color: rgba(0, 0, 0, .87);
         line-height: 1.2;
         background: none;
-        border: 1px solid rgba(0,0,0,.87);
+        border: 1px solid rgba(0, 0, 0, .87);
         box-shadow: none;
         font-size: 15px;
         margin: 20px 0 0 0;
         width: 270px;
-        transition: 0.2s; 
+        transition: 0.2s;
     }
 
-    .btn_entrar2:hover{
+    .btn_entrar2:hover {
         transform: scale(0.9);
-        box-shadow: 1px 1px 1px rgba(0,0,0,.87);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, .87);
         background-color: rgb(229, 227, 227);
+        cursor: pointer;
     }
 
-    .btn_participe2{
+    .btn_participe2 {
         border-radius: 50px;
         padding: 12px 16px;
         font-family: 'SoDo Sans SemiBold';
         line-height: 1.2;
-        background-color: rgba(0,0,0,.87);
-        border: 1px solid rgba(0,0,0,.87);
+        background-color: rgba(0, 0, 0, .87);
+        border: 1px solid rgba(0, 0, 0, .87);
         box-shadow: none;
         color: #ffffff;
         font-size: 15px;
@@ -260,30 +282,32 @@ nav img{
         transition: 0.2s;
     }
 
-    .btn_participe2:hover{
+    .btn_participe2:hover {
         transform: scale(0.9);
-        box-shadow: 1px 1px 1px rgba(0,0,0,.87);
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, .87);
+        cursor: pointer;
     }
 
-    .encontreUmaLoja2{
+    .encontreUmaLoja2 {
         display: flex;
         flex-direction: row;
         align-items: center;
         font-family: 'SoDo Sans SemiBold';
         font-size: 14.5px;
         font-weight: 500;
-        color: rgba(0,0,0,.87);
+        color: rgba(0, 0, 0, .87);
         margin: 10px 0 0 30px;
         height: 50px;
     }
 
-    .encontreUmaLoja2:hover{
+    .encontreUmaLoja2:hover {
         padding: 0 30px 0 30px;
         margin: 10px 0 0 0;
         background-color: rgba(0, 0, 0, 0.1);
+        cursor: pointer;
     }
 
-    .encontreUmaLoja2 img{
+    .encontreUmaLoja2 img {
         width: 21px;
         height: 21px;
         margin: 5px;
@@ -291,27 +315,283 @@ nav img{
 
 }
 
-@media (min-width: 811px){
+@media (min-width: 771px) and (max-width: 783px) {
 
-    .divPrincipal{
+    .divPrincipal {
         display: none;
     }
 
-    .barraLateral{
+    .barraLateral {
         display: none;
     }
 
-    .div_esquerda{
+    .div_esquerda {
         display: none;
     }
 
-    .div_direita{
+    .div_direita {
         display: none
     }
 
-    .encontreUmaLoja2{
+    .encontreUmaLoja2 {
         display: none;
+    }
+
+    .btn_entrar {
+        display: none;
+    }
+
+    .btn_participe {
+        display: none;
+    }
+
+    .div1 {
+        width: 600px;
+    }
+
+    .div1 img {
+        margin: 0 15px;
+    }
+
+    .div1 ul {
+        margin-left: 15px;
+    }
+
+    .div1 ul li {
+        margin-right: 15px;
+    }
+
+    .div2 {
+        justify-content: flex-end;
+        margin-right: 30px;
+        width: 280px;
+    }
+
+    .encontreUmaLoja {
+        display: none;
+    }
+
+    nav {
+        height: 80px;
     }
 }
 
+@media (min-width: 784px) and (max-width: 881px) {
 
+    .divPrincipal {
+        display: none;
+    }
+
+    .barraLateral {
+        display: none;
+    }
+
+    .div_esquerda {
+        display: none;
+    }
+
+    .div_direita {
+        display: none
+    }
+
+    .encontreUmaLoja2 {
+        display: none;
+    }
+
+    .btn_entrar {
+        display: none;
+    }
+
+    .btn_participe {
+        display: none;
+    }
+
+    .div1 {
+        width: 500px;
+    }
+
+    .div1 img {
+        margin: 0 15px;
+    }
+
+    .div1 ul li {
+        margin-right: 15px;
+    }
+
+    .div2 {
+        justify-content: center;
+        width: 300px;
+        margin-right: 10px;
+    }
+
+    .encontreUmaLoja {
+        font-size: 13px;
+    }
+
+    nav {
+        height: 80px;
+    }
+}
+
+@media (min-width: 882px) and (max-width: 995px) {
+
+    .divPrincipal {
+        display: none;
+    }
+
+    .barraLateral {
+        display: none;
+    }
+
+    .div_esquerda {
+        display: none;
+    }
+
+    .div_direita {
+        display: none
+    }
+
+    .encontreUmaLoja2 {
+        display: none;
+    }
+
+    .btn_participe {
+        display: none;
+    }
+
+    .div1 {
+        width: 500px;
+    }
+
+    .div1 img {
+        margin: 0 15px;
+    }
+
+    .div1 ul li {
+        margin-right: 15px;
+    }
+
+    .div2 {
+        justify-content: center;
+        width: 380px;
+        margin-right: 10px;
+    }
+
+    .encontreUmaLoja {
+        font-size: 13px;
+    }
+
+    .btn_entrar {
+        margin-left: 20px;
+    }
+
+    nav {
+        height: 80px;
+    }
+}
+
+@media (min-width: 996px) and (max-width: 1130px) {
+
+    .divPrincipal {
+        display: none;
+    }
+
+    .barraLateral {
+        display: none;
+    }
+
+    .div_esquerda {
+        display: none;
+    }
+
+    .div_direita {
+        display: none
+    }
+
+    .encontreUmaLoja2 {
+        display: none;
+    }
+
+    .btn_participe {
+        display: none;
+    }
+
+    .div1 {
+        width: 500px;
+    }
+
+    .div1 img {
+        margin: 0 15px;
+    }
+
+    .div1 ul {
+        margin-left: 15px;
+    }
+
+    .div1 ul li {
+        margin-right: 15px;
+    }
+
+    .div2 {
+        justify-content: center;
+        width: 380px;
+        margin-right: 10px;
+    }
+
+    .encontreUmaLoja {
+        font-size: 13px;
+    }
+
+    .btn_entrar {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 1131px) and (max-width: 1400px) {
+
+    .divPrincipal {
+        display: none;
+    }
+
+    .barraLateral {
+        display: none;
+    }
+
+    .div_esquerda {
+        display: none;
+    }
+
+    .div_direita {
+        display: none;
+    }
+
+    .encontreUmaLoja2 {
+        display: none;
+    }
+
+    .div1 ul li {
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 1401px) {
+    .divPrincipal {
+        display: none;
+    }
+
+    .barraLateral {
+        display: none;
+    }
+
+    .div_esquerda {
+        display: none;
+    }
+
+    .div_direita {
+        display: none;
+    }
+
+    .encontreUmaLoja2 {
+        display: none;
+    }
+}

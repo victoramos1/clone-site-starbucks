@@ -1,57 +1,57 @@
 @import url(//db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.corpo{
+.corpo {
     margin: 0 auto;
     overflow-x: hidden;
 }
 
-.carrossel{
+.carrossel {
     margin: 0 47px 32px 47px;
 }
 
-#dimensionamento{
+#dimensionamento {
     height: 191.4px;
     width: 75.5%;
     margin: 32px auto;
 }
 
-#dimensionamento p{
+#dimensionamento p {
     width: 896px;
 }
 
-#dimensionamento2{
+#dimensionamento2 {
     width: 720px;
 }
 
-#dimensionamento2 p{
+#dimensionamento2 p {
     width: 500px;
 }
 
-#dimensionamento3 p{
+#dimensionamento3 p {
     width: 500px;
 }
 
-#container_maior{
+#container_maior {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 32px auto 0 auto;
 }
 
-.divParaImagem1{
+.divParaImagem1 {
     width: 720px;
 }
 
-.divParaImagem1 img{
+.divParaImagem1 img {
     width: 720px;
 }
 
-.estilo_compartilhado{
+.estilo_compartilhado {
     background-color: #d4e9e2;
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@
 
 }
 
-.estilo_compartilhado h3{
+.estilo_compartilhado h3 {
     margin: 0 0 24px 0;
     color: #1e3932;
     font-size: 25px;
@@ -69,7 +69,7 @@
 }
 
 
-.estilo_compartilhado p{
+.estilo_compartilhado p {
     font-size: 17px;
     font-weight: 100;
     font-family: 'SoDo Sans SemiBold', sans-serif;
@@ -78,7 +78,7 @@
     color: #1e3932
 }
 
-.btn_maior{
+.btn_maior {
     border-radius: 50px;
     padding: 6px 16px;
     font-family: 'SoDo Sans SemiBold';
@@ -92,12 +92,12 @@
     transition: 0.2s
 }
 
-.btn_maior:hover{
+.btn_maior:hover {
     transform: scale(0.9);
-    box-shadow: 1px 1px 1px rgba(0,0,0,.87);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .87);
 }
 
-.btn_compartilhado{
+.btn_compartilhado {
     border-radius: 50px;
     padding: 6px 16px;
     font-family: 'SoDo Sans SemiBold';
@@ -111,12 +111,12 @@
     transition: 0.2s
 }
 
-.btn_compartilhado:hover{
+.btn_compartilhado:hover {
     transform: scale(0.9);
-    box-shadow: 1px 1px 1px rgba(0,0,0,.87);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .87);
 }
 
-.layout_compartilhado{
+.layout_compartilhado {
     display: flex;
     flex-direction: row;
     margin: 32px auto 0 auto;
@@ -124,47 +124,47 @@
     width: 1440px;
 }
 
-.dimensionamentoCompartilhado{
+.dimensionamentoCompartilhado {
     width: 720px;
     height: 420px;
-    margin: 0 auto 0 auto; 
+    margin: 0 auto 0 auto;
 }
 
-.divParaImagem2{
-    width: 720px;
-    height: 420px;
-}
-
-.divParaImagem2 img{
+.divParaImagem2 {
     width: 720px;
     height: 420px;
 }
 
-footer{
+.divParaImagem2 img {
+    width: 720px;
+    height: 420px;
+}
+
+footer {
     box-shadow: 0px -5px 5px -5px rgba(0, 0, 0, 0.5);
     width: 100vw;
 }
 
-hr{
+hr {
     margin-left: 110px;
     width: 90%;
     color: #fefefe;
 }
 
-.redes_sociais{
+.redes_sociais {
     margin-left: 110px;
 }
 
-.redes_sociais img{
+.redes_sociais img {
     margin: 45px 15px 30px 0;
     transition: 0.2s;
 }
 
-.redes_sociais img:hover{
+.redes_sociais img:hover {
     transform: scale(1.2);
 }
 
-.politicas{
+.politicas {
     display: flex;
     flex-direction: row;
     margin-left: 100px;
@@ -173,23 +173,23 @@ hr{
     font-size: 14px;
 }
 
-.politicas p{
+.politicas p {
     margin: 0 10px;
 }
 
-.corporation{
+.corporation {
     margin: 45px 0 60px 100px;
     font-family: 'SoDo Sans SemiBold';
     font-weight: 100;
     font-size: 14px;
-    color:rgba(0,0,0,.56);
+    color: rgba(0, 0, 0, .56);
 }
 
 /* Responsividade */
 
-@media (min-width: 0px) and (max-width: 799px){
+@media (min-width: 0px) and (max-width: 799px) {
 
-    .corpo{
+    .corpo {
         width: 100vw;
     }
 
@@ -197,220 +197,404 @@ hr{
         font-size: 14px;
     }
 
-    .estilo_compartilhado h3{
+    .estilo_compartilhado h3 {
         margin: 35px 0 0 0;
-        text-align: center ;
+        text-align: center;
     }
 
-    #dimensionamento{
+    #dimensionamento {
         width: 100vw;
         height: 250px;
     }
 
-    #dimensionamento p{
+    #dimensionamento p {
         margin-top: 5px;
-        max-width: 260px;
+        max-width: 70%;
     }
 
-    #container_maior{
+    #container_maior {
         display: flex;
         flex-direction: column;
         width: 100vw;
     }
 
-    #divParaImagem1{
-        height: 337px;
+    #divParaImagem1 {
+        height: auto;
         width: 100vw;
     }
 
-    #divParaImagem1 img{
-        height: 337px;
+    #divParaImagem1 img {
+        height: auto;
         width: 100vw;
     }
 
-    #dimensionamento2{
+    #dimensionamento2 {
+        margin-top: -4px;
         width: 100vw;
-        height: 720px;
+        height: 750px;
+        justify-content: space-between;
     }
 
-    #dimensionamento2 h3{
-        margin: -10px 0 0 0;
-        max-width: 230px;
+    #dimensionamento2 h3 {
+        margin: 80px 0 0 0;
+        max-width: 400px;
     }
 
-    #dimensionamento2 p{
+    #dimensionamento2 p {
         margin: 32px 0 0 0;
-        max-width: 230px;
+        max-width: 80%;
+        text-align: center;
     }
 
-    .btn_maior{
+    .btn_maior {
         width: 220px;
+        margin-bottom: 70px;
     }
-  
-    .layout_compartilhado{
+
+    .layout_compartilhado {
         display: flex;
         flex-direction: column;
         width: 100vw;
         margin-top: 32px;
-        height: 500px;
+        height: auto;
     }
 
-    .divParaImagem2{
-        height: 228px;
+    .divParaImagem2 {
+        height: auto;
         width: 100vw;
     }
 
-    .divParaImagem2 img{
-        height: 228px;
+    .divParaImagem2 img {
+        height: auto;
         width: 100vw;
     }
 
-    .dimensionamentoCompartilhado{
+    .dimensionamentoCompartilhado {
+        margin-top: -5px;
         width: 100vw;
         height: 300px;
         padding-bottom: 25px;
     }
 
-    .dimensionamentoCompartilhado h3{
+    .dimensionamentoCompartilhado h3 {
         max-width: 230px;
         margin-bottom: 20px;
     }
 
-    .dimensionamentoCompartilhado p{
+    .dimensionamentoCompartilhado p {
         max-width: 270px;
     }
 
-    hr{
+    hr {
         max-width: 90%;
         margin-left: 5%
     }
 
-    .redes_sociais{
+    .redes_sociais {
         display: flex;
         flex-direction: row;
         max-width: 100vw;
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
-    .politicas{
+
+    .politicas {
         display: flex;
         flex-direction: column;
         margin-left: 5%;
     }
 
-    .politicas p{
+    .politicas p {
         padding: 10px 0;
+        margin: 0;
     }
 
-    .corporation{
-        margin-left: 5%; 
+    .corporation {
+        margin-left: 5%;
     }
 
-    span{
+    span {
         display: none;
     }
 }
 
-@media (min-width: 800px) and (max-width: 1200px){
+@media (min-width: 800px) and (max-width: 1000px) {
 
-    #dimensionamento{
+    #dimensionamento {
         width: 100vw;
     }
 
-    #dimensionamento p{
+    #dimensionamento p {
         max-width: 55%;
     }
 
-    #container_maior{
+    #container_maior {
         width: 100vw;
-        height: 700px;
+        height: 530px;
     }
 
-    #divParaImagem1{
-        width: 385px;
-        height: 700px;
+    #divParaImagem1 {
+        width: 50%;
+        height: 530px;
         background-color: #d4e9e2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    #divParaImagem1 img{
-        width: 385px;
-        height: 331px;
-        position: absolute;
-        top: 28%;
+    #divParaImagem1 img {
+        height: auto;
+        width: auto;
     }
 
-    #dimensionamento2{
-        height: 700px;
+    #dimensionamento2 {
+        height: 530px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    #dimensionamento2 h3{
+    #dimensionamento2 h3 {
         max-width: 300px;
-        margin-left: 200px;
+        text-align: center;
     }
 
-    #dimensionamento2 p{
-        max-width: 270px;
-        margin-left: 100px;
+    #dimensionamento2 p {
+        max-width: 350px;
+        font-size: 15px;
     }
 
-    .btn_maior{
+    .btn_maior {
         width: 250px;
-        margin-left: 100px;
     }
 
-    .layout_compartilhado{
+    .layout_compartilhado {
         display: flex;
         flex-direction: row;
         align-items: center;
-        height: 280px;
+        height: 350px;
         max-width: 100vw;
         margin-bottom: 32px;
     }
 
-    .divParaImagem2{
-        height: 280px;
+    #container_maior {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .divParaImagem2 {
         width: 50%;
         background-color: #d4e9e2;
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 350px;
     }
 
-    .divParaImagem2 img{
-        height: 225px;
-        width: 100%;
+    .divParaImagem2 img {
+        height: auto;
+        width: auto;
     }
 
-    .dimensionamentoCompartilhado{
-        height: 280px;
+    .dimensionamentoCompartilhado {
+        height: 350px;
         width: 50%;
     }
 
-    .dimensionamentoCompartilhado h3{
+    .dimensionamentoCompartilhado h3 {
         max-width: 250px;
         text-align: center;
         margin-top: 10px;
     }
 
-    .dimensionamentoCompartilhado p{
+    .dimensionamentoCompartilhado p {
+        max-width: 250px;
+        text-align: center;
+    }
+
+    hr {
+        max-width: 90%;
+        margin-left: 5%
+    }
+
+    .redes_sociais {
+        display: flex;
+        flex-direction: row;
+        max-width: 100vw;
+        margin-left: 5%;
+    }
+
+
+    .politicas {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .politicas p {
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .corporation {
+        margin-left: 5%;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    #dimensionamento {
+        width: 100vw;
+    }
+
+    #dimensionamento p {
+        max-width: 55%;
+    }
+
+    #container_maior {
+        width: 100vw;
+        height: 530px;
+    }
+
+    #divParaImagem1 {
+        width: 50%;
+        height: 530px;
+        background-color: #d4e9e2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #divParaImagem1 img {
+        height: auto;
+        width: auto;
+    }
+
+    #dimensionamento2 {
+        height: 530px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #dimensionamento2 h3 {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    #dimensionamento2 p {
+        max-width: 350px;
+        font-size: 15px;
+    }
+
+    .btn_maior {
+        width: 250px;
+    }
+
+    .layout_compartilhado {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 350px;
+        max-width: 100vw;
+        margin-bottom: 32px;
+    }
+
+    #container_maior {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .divParaImagem2 {
+        width: 50%;
+        background-color: #d4e9e2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 350px;
+    }
+
+    .divParaImagem2 img {
+        height: auto;
+        width: auto;
+    }
+
+    .dimensionamentoCompartilhado {
+        height: 350px;
+        width: 50%;
+    }
+
+    .dimensionamentoCompartilhado h3 {
+        max-width: 250px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .dimensionamentoCompartilhado p {
         max-width: 250px;
         text-align: center;
     }
     
-    .redes_sociais{
-        margin-left: 10px;
+    hr {
+        max-width: 80%;
+        margin-left: 140px;
     }
 
-    .politicas{
-        margin-left: 10px;
+    .redes_sociais {
+        display: flex;
+        flex-direction: row;
+        max-width: 100vw;
+        margin-left: 140px;
     }
 
-    .corporation{
-        margin-left: 10px;
+    .politicas {
+        display: flex;
+        flex-direction: row;
+        margin-left: 140px;
     }
 
-    span{
-        display: none;
+    .corporation {
+        margin-left: 140px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+
+    #dimensionamento {
+        width: 100vw;
+        margin: 0 auto;
     }
 
+    #divParaImagem1 {
+        width: 50vw;
+    }
+
+    #divParaImagem1 img{
+        width: 50vw;
+    }
+
+    .divParaImagem2 {
+        width: 50vw;
+    }
+
+    .divParaImagem2 img {
+        width: 50vw;
+    }
+
+    .dimensionamentoCompartilhado {
+        width: 50vw;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1900px) {
+    #dimensionamento {
+        width: 1440px;
+        margin: 0 auto;
+    }
 }
