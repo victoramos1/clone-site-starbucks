@@ -24,7 +24,7 @@
 
 <p>Teste a aplicação online clicando em: https://victoramos1.github.io/clone-site-starbucks/</p>
 
-<h2>Inicialização</h2>
+<h2>Testar localmente</h2>
 
 <p>1 - Instale o Node.js. Caso tenha instalado, pule essa etapa</p>
 
